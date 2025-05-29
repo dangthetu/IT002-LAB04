@@ -9,7 +9,7 @@ PhanSo::PhanSo(double a, double b) {
 }
 
 // Hàm tính ước chung lớn nhất (GCD) bằng thuật toán Euclid
-int gcd(int a, int b) {
+int PhanSo::gcd(int a, int b) {
     while (b != 0) {
         int r = a % b;
         a = b;
