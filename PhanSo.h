@@ -7,13 +7,14 @@ class PhanSo {
 private:
     double tuSo;   // Tử số
     double mauSo;  // Mẫu số
+    // Hàm tính ước chung lớn nhất (GCD) bằng thuật toán Euclid
+    int gcd(int , int );
+    // Hàm rút gọn phân số về dạng tối giản
+    void rutGon();
 
 public:
     // Hàm khởi tạo có tham số mặc định: phân số = 0/1
     PhanSo(double tuSo = 0, double mauSo = 1);
-
-    // Hàm rút gọn phân số về dạng tối giản
-    void rutGon();
 
     // Nạp chồng toán tử >> để nhập phân số từ bàn phím
     friend istream& operator>>(istream &is, PhanSo &a);
